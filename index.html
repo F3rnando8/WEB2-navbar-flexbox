@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova | Tienda de Computadoras y Tecnología Gamer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#inicio">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 22h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"></path>
+                        <rect x="7" y="7" width="10" height="10" rx="1"></rect>
+                    </svg>
+                    <span>TechNova</span>
+                </a>
+            </div>
+
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#productos" class="nav-link">Productos</a></li>
+                <li><a href="#servicios-tecnicos" class="nav-link">Servicios Técnicos</a></li> 
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <button class="btn btn-login">Mi Cuenta</button>
+                <button class="btn btn-primary">Ver Carrito</button>
+            </div>
+
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="inicio" class="section section-hero">
+            <div class="section-content">
+                <h1 class="fade-in">Desata el Máximo Poder</h1>
+                <p class="fade-in">El arsenal de hardware de élite que define la próxima generación de gaming.</p>
+                <button class="btn btn-primary btn-lg fade-in">Ver el Arsenal</button>
+            </div>
+        </section>
+
+        <section id="productos" class="section section-light">
+            <div class="section-content">
+                <h2 class="section-title">Categorías Destacadas</h2>
+                <div class="services-grid">
+                    
+                    <div class="service-card flip-card">
+                        <input type="checkbox" id="flip-1" class="flip-toggle" hidden>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="service-icon">
+                                    <img src="laptop.jpg" alt="Icono de Laptop Gaming">
+                                </div>
+                                <h3>Laptops Gaming</h3>
+                                <label for="flip-1" class="btn btn-primary btn-sm details-button">DETALLES</label>
+                            </div>
+                            <div class="card-back">
+                                <h3>Laptops Gaming</h3>
+                                <p>Máximo rendimiento para tus juegos favoritos, portabilidad sin límites. Modelos con RTX 4080 y procesadores Core Ultra.</p>
+                                <label for="flip-1" class="btn btn-secondary btn-sm back-button">VOLVER</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card flip-card">
+                        <input type="checkbox" id="flip-2" class="flip-toggle" hidden>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="service-icon">
+                                    <img src="pc.webp" alt="Icono de PC de Escritorio">
+                                </div>
+                                <h3>PC de Escritorio</h3>
+                                <label for="flip-2" class="btn btn-primary btn-sm details-button">DETALLES</label>
+                            </div>
+                            <div class="card-back">
+                                <h3>PC de Escritorio</h3>
+                                <p>Estaciones de trabajo y PC para diseñadores y creadores de contenido. Configuraciones personalizadas y ensamblajes premium.</p>
+                                <label for="flip-2" class="btn btn-secondary btn-sm back-button">VOLVER</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card flip-card">
+                        <input type="checkbox" id="flip-3" class="flip-toggle" hidden>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="service-icon">
+                                    <img src="componentes.jpg" alt="Icono de Componentes">
+                                </div>
+                                <h3>Componentes</h3>
+                                <label for="flip-3" class="btn btn-primary btn-sm details-button">DETALLES</label>
+                            </div>
+                            <div class="card-back">
+                                <h3>Componentes</h3>
+                                <p>Tarjetas gráficas, procesadores, memorias RAM y SSDs para armar o mejorar tu equipo. Solo trabajamos con marcas top.</p>
+                                <label for="flip-3" class="btn btn-secondary btn-sm back-button">VOLVER</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card flip-card">
+                        <input type="checkbox" id="flip-4" class="flip-toggle" hidden>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="service-icon">
+                                    <img src="perifericos.jpeg" alt="Icono de Periféricos">
+                                </div>
+                                <h3>Periféricos</h3>
+                                <label for="flip-4" class="btn btn-primary btn-sm details-button">DETALLES</label>
+                            </div>
+                            <div class="card-back">
+                                <h3>Periféricos</h3>
+                                <p>Teclados mecánicos, ratones de precisión, monitores 4K y accesorios ergonómicos para maximizar tu productividad y juego.</p>
+                                <label for="flip-4" class="btn btn-secondary btn-sm back-button">VOLVER</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios-tecnicos" class="section section-dark">
+            <div class="section-content">
+                <h2 class="section-title">Soporte y Overclocking</h2>
+                <div class="services-grid services-dark-grid"> <div class="service-card-dark">
+                        <div class="service-icon">🛠️</div>
+                        <h3>Reparación de Computadoras</h3>
+                        <p>Diagnóstico avanzado y reparación de hardware y software para todas las marcas.</p>
+                    </div>
+                    <div class="service-card-dark">
+                        <div class="service-icon">🔥</div>
+                        <h3>Optimización de Rendimiento</h3>
+                        <p>Ajustes de BIOS, Overclocking seguro y mejora de FPS para el máximo rendimiento.</p>
+                    </div>
+                    <div class="service-card-dark">
+                        <div class="service-icon">❄️</div>
+                        <h3>Gestión Térmica Premium</h3>
+                        <p>Instalación de refrigeración líquida custom y mantenimiento preventivo extremo.</p>
+                    </div>
+                    <div class="service-card-dark">
+                        <div class="service-icon">🛡️</div>
+                        <h3>Garantía Extendida (Elite)</h3>
+                        <p>Cobertura completa en todos nuestros productos y servicio post-venta garantizado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section section-light">
+            <div class="section-content">
+                <h2 class="section-title">Nivel Aprobado: Testimonios</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <p class="testimonial-text">"Compré mi PC Gaming aquí. ¡Velocidad de entrega increíble y la atención al cliente fue de 10!"</p>
+                        <div class="testimonial-author">
+                            <strong>Roberto Fuentes</strong>
+                            <span>Gamer Profesional | Verified Buyer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"Me ayudaron a ensamblar una Workstation perfecta para edición de video. Precios muy competitivos."</p>
+                        <div class="testimonial-author">
+                            <strong>Laura Méndez</strong>
+                            <span>Streamer | Top Tier Setup</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section section-contact">
+            <div class="section-content">
+                <h2 class="section-title">¿Listo para Subir de Nivel?</h2>
+                <p>Nuestro equipo de expertos en hardware está listo para ayudarte a dominar el juego.</p>
+                <button class="btn btn-secondary btn-lg contact-button">Conectar con Soporte **24/7**</button>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>soporte@technova.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+1 (555) 789-0000</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>404 Tech Alley, Silicon City</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 TechNova. **Powered by Gamers, Built for Pros.** | Tu destino para la tecnología.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
